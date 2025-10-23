@@ -107,10 +107,11 @@ a:hover::after {
 }
 #about{
     height: auto;
-    background-color: #F8F9FD;
+    background-color: #cccdd3;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 30px;
     .aboutdiv{
         height: 300px;
         width: 80%;
@@ -196,7 +197,66 @@ transition: 0.5s;
     }
 }
 
-
+#why{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    .whydiv{
+        width: 90%;
+                    margin-top: 30px;
+padding-top: 30px;
+        .titlediv{
+            margin-top: 30px;
+           margin-bottom: 30PX;
+h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+        }
+        .whyimg{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 30px;
+         img{
+             margin-top: 30px;
+             height: 600px;
+         }
+        }
+        .whytxt{
+           .whytexts{
+            margin-top: 30px;
+           margin-bottom: 30PX;
+display: flex;
+            .wtext{
+                display: flex;
+                flex-direction: column;
+                 h3{
+                    font-weight: bold;
+                    font-size: 35px;
+                    color: black;
+                    margin-bottom: 15px;
+                }
+                p{
+                    color: rgb(136, 131, 131);
+font-size: 25px;
+                }
+            }
+            .whylogo{
+                margin-right: 20px;
+                img{
+                     width: 100px;
+           height: 100px;
+           border-radius: 50%;
+                }
+                
+            }
+           } 
+        }
+    }
+}
 
 
 
@@ -260,6 +320,25 @@ transition: 0.5s;
         }
       }
     }
+      #why{
+.whydiv{
+    .titlediv{
+        margin-top: 30px;
+       
+    }
+   .whytxt{
+    .whytexts{
+       .whylogo{
+        img{
+            width:60px;
+            height:60px;
+        }
+       }
+    
+        }
+    }
+   }
+}
 }
 @media (max-width:595px){
     #mainsection{
@@ -289,4 +368,115 @@ transition: 0.5s;
       }
      }
     }
+}
+@media (max-width:1420px){
+   #why{
+.whydiv{
+    .titlediv{
+        margin-top: 30px;
+        h2{
+        }
+    }
+   .whytxt{
+    .whytexts{
+        .wtext{
+          h3{
+            font-size:30px;
+          }
+          p{
+            font-size: 20px;
+          }
+        }
+    
+        }
+    }
+   }
+}
+ #about{
+    .aboutdiv{
+        .secondaboutdiv{
+          height:400px;
+          .aboutext1{
+            p{
+                font-size: 15px
+            }
+          }
+        
+        }
+    }
+ }
+}
+@media (max-width:985px){
+   #why{
+.whydiv{
+   .whytxt{
+    .whytexts{
+       .whylogo{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+       }
+    
+        }
+    }
+   }
+}
+ 
+}
+@media(max-width:1050px){
+#about{
+    .aboutdiv{
+        .secondaboutdiv{
+           padding-bottom: -30px;
+            .btndiv{
+                button{
+                    margin-bottom: -30px
+                }
+            }
+        }
+    }
+}
+}
+@media(max-width:850px){
+#about{
+    .aboutdiv{
+        .secondaboutdiv{
+           padding-bottom: -30px;
+           height: 450px;
+            .btndiv{
+                button{
+                    margin-bottom: -30px;
+                   width: 60px;
+                   height: 60px;
+                
+                }
+            }
+        }
+    }
+}
+}
+@media(max-width:750px){
+#about{
+    .aboutdiv{
+        .secondaboutdiv{
+           padding-bottom: -30px;
+           height: 350px;
+           .aboutext1{
+            background-color: aqua;
+            p{
+                font-size:9px;
+            }
+           }
+            .btndiv{
+                button{
+                    margin-bottom: -30px;
+                   width: 60px;
+                   height: 60px;
+                
+                }
+            }
+        }
+    }
+}
 }

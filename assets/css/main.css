@@ -102,10 +102,11 @@ header .navdiv nav .uldiv ul li a:hover::after {
 
 #about {
   height: auto;
-  background-color: #F8F9FD;
+  background-color: #cccdd3;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 30px;
 }
 #about .aboutdiv {
   height: 300px;
@@ -186,6 +187,64 @@ header .navdiv nav .uldiv ul li a:hover::after {
   height: 90px;
 }
 
+#why {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+#why .whydiv {
+  width: 90%;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+#why .whydiv .titlediv {
+  margin-top: 30px;
+  margin-bottom: 30PX;
+}
+#why .whydiv .titlediv h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#why .whydiv .whyimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+#why .whydiv .whyimg img {
+  margin-top: 30px;
+  height: 600px;
+}
+#why .whydiv .whytxt .whytexts {
+  margin-top: 30px;
+  margin-bottom: 30PX;
+  display: flex;
+}
+#why .whydiv .whytxt .whytexts .wtext {
+  display: flex;
+  flex-direction: column;
+}
+#why .whydiv .whytxt .whytexts .wtext h3 {
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+  margin-bottom: 15px;
+}
+#why .whydiv .whytxt .whytexts .wtext p {
+  color: rgb(136, 131, 131);
+  font-size: 25px;
+}
+#why .whydiv .whytxt .whytexts .whylogo {
+  margin-right: 20px;
+}
+#why .whydiv .whytxt .whytexts .whylogo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 @media (max-width: 1590px) {
   header .navdiv nav .uldiv {
     width: 40%;
@@ -215,6 +274,13 @@ header .navdiv nav .uldiv ul li a:hover::after {
   #mainsection .mainsecdiv .maindiv h1 {
     font-size: 40px;
   }
+  #why .whydiv .titlediv {
+    margin-top: 30px;
+  }
+  #why .whydiv .whytxt .whytexts .whylogo img {
+    width: 60px;
+    height: 60px;
+  }
 }
 @media (max-width: 595px) {
   #mainsection {
@@ -233,5 +299,64 @@ header .navdiv nav .uldiv ul li a:hover::after {
   }
   #about .aboutdiv .secondaboutdiv .aboutext1 p {
     font-size: 16px;
+  }
+}
+@media (max-width: 1420px) {
+  #why .whydiv .titlediv {
+    margin-top: 30px;
+  }
+  #why .whydiv .whytxt .whytexts .wtext h3 {
+    font-size: 30px;
+  }
+  #why .whydiv .whytxt .whytexts .wtext p {
+    font-size: 20px;
+  }
+  #about .aboutdiv .secondaboutdiv {
+    height: 400px;
+  }
+  #about .aboutdiv .secondaboutdiv .aboutext1 p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 985px) {
+  #why .whydiv .whytxt .whytexts .whylogo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 1050px) {
+  #about .aboutdiv .secondaboutdiv {
+    padding-bottom: -30px;
+  }
+  #about .aboutdiv .secondaboutdiv .btndiv button {
+    margin-bottom: -30px;
+  }
+}
+@media (max-width: 850px) {
+  #about .aboutdiv .secondaboutdiv {
+    padding-bottom: -30px;
+    height: 450px;
+  }
+  #about .aboutdiv .secondaboutdiv .btndiv button {
+    margin-bottom: -30px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 750px) {
+  #about .aboutdiv .secondaboutdiv {
+    padding-bottom: -30px;
+    height: 350px;
+  }
+  #about .aboutdiv .secondaboutdiv .aboutext1 {
+    background-color: aqua;
+  }
+  #about .aboutdiv .secondaboutdiv .aboutext1 p {
+    font-size: 9px;
+  }
+  #about .aboutdiv .secondaboutdiv .btndiv button {
+    margin-bottom: -30px;
+    width: 60px;
+    height: 60px;
   }
 }
