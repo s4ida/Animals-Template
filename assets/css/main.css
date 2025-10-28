@@ -359,6 +359,73 @@ header .navdiv nav .uldiv ul li a:hover::after {
   width: 100%;
 }
 
+.carousel-section {
+  position: relative;
+  background-image: url(/assets/img/homesection.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 600px;
+  width: 61%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.item {
+  min-width: 400px;
+  margin: 0 5px;
+  background-color: white;
+  color: rgb(201, 192, 192);
+  text-align: center;
+  font-size: 18px;
+  padding: 40px 0;
+  border-radius: 8px;
+}
+.item .clientstext p {
+  font-size: 20px;
+  text-align: start;
+}
+.item .profil {
+  display: flex;
+}
+.item .profil img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.item .profil .profiltxt h1 {
+  font-size: 30px;
+}
+
+button.prev, button.next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
 @media (max-width: 1590px) {
   header .navdiv nav .uldiv {
     width: 40%;
