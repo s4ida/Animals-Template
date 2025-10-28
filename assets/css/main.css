@@ -245,6 +245,39 @@ header .navdiv nav .uldiv ul li a:hover::after {
   border-radius: 50%;
 }
 
+#count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+  width: 100%;
+  background-color: #00BD56;
+}
+#count .countdivs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+#count .countdivs .countdiv .stat-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#count .countdivs .countdiv .stat-box p {
+  color: white;
+  font-size: 25px;
+}
+#count .countdivs .countdiv .stat-box .count {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+
 @media (max-width: 1590px) {
   header .navdiv nav .uldiv {
     width: 40%;
@@ -347,9 +380,6 @@ header .navdiv nav .uldiv ul li a:hover::after {
   #about .aboutdiv .secondaboutdiv {
     padding-bottom: -30px;
     height: 350px;
-  }
-  #about .aboutdiv .secondaboutdiv .aboutext1 {
-    background-color: aqua;
   }
   #about .aboutdiv .secondaboutdiv .aboutext1 p {
     font-size: 9px;
