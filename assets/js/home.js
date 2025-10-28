@@ -31,3 +31,20 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.5 });
 
 counters.forEach(counter => observer.observe(counter));
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdowns = document.querySelectorAll('.dropdown-container');
+
+  dropdowns.forEach(drop => {
+    const btn = drop.querySelector('.dropdown-btn');
+    const content = drop.querySelector('.dropdown-content');
+    const icon = drop.querySelector('.icon');
+
+    btn.addEventListener('click', () => {
+      content.classList.toggle('show'); // aç/bağla
+      icon.textContent = content.classList.contains('show') ? '-' : '+';
+    });
+  });
+});
+
+

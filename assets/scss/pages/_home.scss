@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+        background-color:  #f1f1f5;
+
+}
 header{
     width: 100%;
     display: flex;
@@ -295,7 +299,87 @@ font-size: 25px;
   }
 }
 
+#asks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    .askdiv{
+      width: 80%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+.asktext{
+    width: 80%;
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    p{
+        color: #929292;
+        font-size: 20px;
+    }
+}
+.dropdown-container {
+  
+  margin-bottom: 20px;
+}
 
+.dropdown-btn {
+  width: 80%;
+  padding: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: rgb(148, 139, 139);
+  border: none;
+  border-radius: 50px;
+  padding: 25px;
+  font-size: 20px;
+}
+.dropdown-btn:hover{
+    background-color: #00BD56;
+    transition: 0.5s;
+    color: white;
+}
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: max-height 0.4s ease;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-top: 5px;
+  width: 80%;
+}
+
+.dropdown-content ul  li{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content li:hover {
+  background-color: #eee;
+}
+
+.dropdown-content.show {
+  max-height: 500px; 
+}
+.videodiv{
+    background-color: chocolate;
+    iframe {
+        height: 560px;
+        width: 100%;
+    }
+}
+    }
+}
 
 
 
